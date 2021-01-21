@@ -1,0 +1,272 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box; }
+
+body {
+  background: linear-gradient(to bottom, #7db9e8 34%, #7db9e8 34%, #7db9e8 61%, #7db9e8 61%, #7db9e8 67%, #212121 100%);
+  min-width: 1550px; }
+
+main,
+.forms {
+  height: 100vh;
+  margin: auto; }
+
+.forms {
+  width: 850px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: space-evenly; }
+
+.login h2 {
+  min-width: 300px;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #6a92d6;
+  font: 20px "Open Sans", sans-serif;
+  color: #ffffff;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  border-bottom: 1px solid #5368a6; }
+
+.profile h2 {
+  min-width: 300px;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #9c9077;
+  font: 20px "Open Sans", sans-serif;
+  color: #fff;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  border-bottom: 1px solid #5368a6; }
+
+.download h2 {
+  min-width: 300px;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #4c8e70;
+  font: 20px "Open Sans", sans-serif;
+  color: #fff;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  border-bottom: 1px solid #5368a6; }
+
+.location h2 {
+  min-width: 300px;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #a6a075;
+  font: 20px "Open Sans", sans-serif;
+  color: #fff;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  border-bottom: 1px solid #5368a6; }
+
+.content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  padding: 20px;
+  min-height: 325px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.336); }
+  .content-wrapper button {
+    display: flex;
+    justify-content: center;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 7px; }
+
+.login > .content-wrapper .btn1 {
+  min-width: 249px;
+  background: #bdcee5;
+  color: #8f5757;
+  font: 20px "Open Sans", sans-serif; }
+
+.login > .content-wrapper .btn2 {
+  min-width: 249px;
+  background: #688ccb;
+  color: #711212;
+  font: 20px "Open Sans", sans-serif; }
+
+.login > .content-wrapper .btn3 {
+  min-width: 249px;
+  background: #73add6;
+  color: #e3f73a;
+  font: 20px "Open Sans", sans-serif; }
+
+.login > .content-wrapper .btn4 {
+  min-width: 249px;
+  background: #64a88e;
+  color: #ffffff;
+  font: 20px "Open Sans", sans-serif; }
+
+.profile > .content-wrapper .btn1 {
+  min-width: 174px;
+  background: #bdcee5;
+  color: #8f5757;
+  font: 14px "Open Sans", sans-serif; }
+
+.profile > .content-wrapper .btn2 {
+  min-width: 174px;
+  background: #688ccb;
+  color: #711212;
+  font: 14px "Open Sans", sans-serif; }
+
+.profile > .content-wrapper .btn3 {
+  min-width: 174px;
+  background: #73add6;
+  color: #e3f73a;
+  font: 14px "Open Sans", sans-serif; }
+
+.profile > .content-wrapper .btn4 {
+  min-width: 174px;
+  background: #64a88e;
+  color: #ffffff;
+  font: 14px "Open Sans", sans-serif; }
+
+.location > .content-wrapper {
+  padding: 20px;
+  min-height: 130px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.336); }

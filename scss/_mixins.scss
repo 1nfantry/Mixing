@@ -1,0 +1,31 @@
+@mixin container($bg, $color, $font) {
+  min-width: 300px;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $bg;
+  font: $font;
+  color: $color;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  border-bottom: 1px solid #5368a6;
+}
+@mixin content-wrapper($h) {
+  padding: 20px;
+  min-height: $h;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.336);
+}
+@mixin btn($bg, $color, $font) {
+  min-width: 249px;
+  background: $bg;
+  color: $color;
+  font: $font;
+}
+@mixin btn2($bg, $color, $font) {
+  min-width: 174px;
+  background: $bg;
+  color: $color;
+  font: $font;
+}

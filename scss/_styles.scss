@@ -1,0 +1,81 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+body {
+  background: $backgroundColor;
+  min-width: 1550px;
+  // font-family: 'Open Sans', sans-serif;
+}
+main,
+.forms {
+  height: 100vh;
+  margin: auto;
+}
+.forms {
+  width: 850px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: space-evenly;
+}
+.login h2 {
+  @include container(#6a92d6, #ffffff, $fontMain);
+}
+.profile h2 {
+  @include container(#9c9077, #fff, $fontMain);
+}
+.download h2 {
+  @include container(#4c8e70, #fff, $fontMain);
+}
+.location h2 {
+  @include container(#a6a075, #fff, $fontMain);
+}
+.content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  @include content-wrapper($hLARGE);
+  button {
+    display: flex;
+    justify-content: center;
+    padding: 15px 20px;
+    border: none;
+    border-radius: $btn-radius-lg;
+  }
+}
+.login > .content-wrapper {
+  .btn1 {
+    @include btn($btnPrimaryBg, #8f5757, $btn-lg-font);
+  }
+  .btn2 {
+    @include btn($btnSecondaryBg, #711212, $btn-lg-font);
+  }
+  .btn3 {
+    @include btn($btnThirdBg, #e3f73a, $btn-lg-font);
+  }
+  .btn4 {
+    @include btn($btnFourthBg, #ffffff, $btn-lg-font);
+  }
+}
+.profile > .content-wrapper {
+  .btn1 {
+    @include btn2($btnPrimaryBg, #8f5757, $btn-small-font);
+  }
+  .btn2 {
+    @include btn2($btnSecondaryBg, #711212, $btn-small-font);
+  }
+  .btn3 {
+    @include btn2($btnThirdBg, #e3f73a, $btn-small-font);
+  }
+  .btn4 {
+    @include btn2($btnFourthBg, #ffffff, $btn-small-font);
+  }
+}
+.location > .content-wrapper {
+  @include content-wrapper($hSMALL);
+}
